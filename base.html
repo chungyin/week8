@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>week8 eCharts</title>
+    <title>ECharts</title>
     <!-- Use echarts.js -->
     <script src="echarts.min.js"></script>
     <script src="map.js"></script>
@@ -20,12 +20,6 @@
         option = {
             "title": {
                 "text": "Hong Kong Population by gender",
-            },
-            "legend": {
-                "data": ["Male", "Female"],
-                "align": "left",
-                "top": 20,
-                "left": 10
             },
             "xAxis": [{
                 "type": "category",
@@ -49,12 +43,6 @@
                     3108107,
                     3285344
                 ],
-                "markPoint": {
-                    "data": [{
-                        "type": "max",
-                        "name": "max"
-                    }]
-                }
             }, {
                 "name": "Female",
                 "type": "bar",
@@ -63,15 +51,6 @@
                     3109449,
                     3423045
                 ],
-                "markLine": {
-                    data: [
-                        [{
-                            "coord": [0, 3000000]
-                        }, {
-                            "coord": [2, 1000000]
-                        }]
-                    ]
-                }
             }]
         };
 
@@ -87,11 +66,11 @@
 
         option = {
             "title": {
-                "text": "Sweden",
+                "text": "POI in each region",
             },
             "tooltip": {},
             "legend": {
-                "orient": "horizontal",
+                "orient": "vertical",
                 "right": 20,
                 "bottom": 20,
                 "data": [
@@ -114,8 +93,8 @@
                 "map": "GeoJSON",
                 "roam": true,
                 "center": [
-                    100,
-                    40
+                    114.31,
+                    30.52
                 ],
                 "zoom": 1,
                 "scaleLimit": {
@@ -134,14 +113,8 @@
                     "name": "广东",
                     "value": 5000
                 }, {
-                    "name": "重庆",
+                    "name": "湖北",
                     "value": 15000
-                }, {
-                    "name": "北京",
-                    "value": 15000
-                }, {
-                    "name": "山西",
-                    "value": 2000
                 }]
             }]
         }
